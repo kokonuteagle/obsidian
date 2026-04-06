@@ -4,6 +4,11 @@
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.08);
   --shadow-soft-dark: 0 18px 45px rgba(0, 0, 0, 0.22);
   --border-subtle: 1px solid var(--lightgray);
+  --layout-left-width: 220px;
+  --layout-right-width: 400px;
+  --layout-content-max: 880px;
+  --layout-gap: clamp(1rem, 1.8vw, 2rem);
+  --graph-height: 430px;
 }
 
 html {
@@ -166,5 +171,195 @@ img {
   article {
     border-radius: 18px;
     padding: 1.4rem 1.1rem;
+  }
+}
+
+.page {
+  max-width: min(1680px, calc(100vw - 40px));
+}
+
+.page > #quartz-body {
+  display: grid;
+  grid-template-areas:
+    "grid-sidebar-left grid-center grid-sidebar-right"
+    "grid-sidebar-left grid-footer grid-sidebar-right";
+  column-gap: var(--layout-gap) !important;
+  row-gap: 1rem !important;
+  align-items: start;
+}
+
+.page > #quartz-body > .sidebar {
+  display: flex;
+  gap: 1rem;
+}
+
+.page > #quartz-body > .sidebar.left,
+.page > #quartz-body > .sidebar.right {
+  padding-inline: 0;
+}
+
+.page > #quartz-body > .sidebar.left {
+  grid-area: grid-sidebar-left;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 2.6rem;
+}
+
+.page > #quartz-body > .sidebar.right {
+  grid-area: grid-sidebar-right;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 2.6rem;
+}
+
+.page > #quartz-body > .center {
+  grid-area: grid-center;
+  min-width: 0;
+  width: min(100%, var(--layout-content-max));
+  max-width: var(--layout-content-max);
+}
+
+.page > #quartz-body > footer {
+  grid-area: grid-footer;
+}
+
+.page > #quartz-body > .center > hr {
+  display: none;
+}
+
+.page > #quartz-body > .center article {
+  width: 100%;
+  margin: 0;
+}
+
+.page > #quartz-body > .center .page-header,
+.page > #quartz-body > .center .page-footer {
+  max-width: 100%;
+}
+
+.page > #quartz-body > .sidebar.left .page-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.page > #quartz-body > .sidebar.left .flex-component {
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.page > #quartz-body > .sidebar.left .search {
+  min-width: 0;
+}
+
+.page > #quartz-body > .sidebar.left .explorer {
+  flex: 1 1 auto;
+}
+
+.page > #quartz-body > .sidebar.left .explorer-content {
+  margin-top: 0.65rem;
+}
+
+.page > #quartz-body > .sidebar.right > * {
+  width: 100%;
+}
+
+.page > #quartz-body > .sidebar.right .graph {
+  padding: 1rem 1rem 1.15rem;
+}
+
+.page > #quartz-body > .sidebar.right .graph > .graph-outer {
+  height: var(--graph-height);
+}
+
+.page > #quartz-body > .sidebar.right .graph > .global-graph-outer > .global-graph-container {
+  border-radius: 24px;
+}
+
+.page > #quartz-body > .sidebar.right .toc,
+.page > #quartz-body > .sidebar.right .backlinks {
+  padding: 1rem 1rem 1.05rem;
+}
+
+@media (min-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-columns: var(--layout-left-width) minmax(0, 1fr) var(--layout-right-width) !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1480px) {
+  :root {
+    --layout-right-width: 370px;
+    --layout-content-max: 840px;
+    --graph-height: 390px;
+  }
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --layout-content-max: 100%;
+    --graph-height: 360px;
+  }
+
+  .page {
+    max-width: min(1080px, calc(100vw - 24px));
+  }
+
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+  }
+
+  .page > #quartz-body > .center {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page > #quartz-body > .sidebar.left,
+  .page > #quartz-body > .sidebar.right {
+    height: auto;
+    position: static;
+    padding-top: 0;
+  }
+
+  .page > #quartz-body > .sidebar.right {
+    flex-direction: column !important;
+  }
+
+  .page > #quartz-body > .sidebar.right > * {
+    max-height: none !important;
+  }
+
+  .page > #quartz-body > .sidebar.right > .toc {
+    display: block !important;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --graph-height: 300px;
+  }
+
+  .page {
+    max-width: 100%;
+  }
+
+  .page > #quartz-body {
+    row-gap: 0.85rem !important;
+  }
+
+  .page > #quartz-body > .sidebar.left {
+    padding-top: 1.25rem;
+  }
+
+  .page > #quartz-body > .sidebar.left .page-title {
+    margin-bottom: 0;
   }
 }
