@@ -1,0 +1,15 @@
+{
+  "name": "knowledge-constellation-quartz",
+  "private": true,
+  "type": "module",
+  "description": "Obsidian-friendly personal knowledge vault published with Quartz and GitHub Pages.",
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap-quartz.mjs",
+    "sync": "node scripts/sync-quartz.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

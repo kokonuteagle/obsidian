@@ -1,0 +1,4 @@
+.quartz-engine/
+.DS_Store
+Thumbs.db
+public/
