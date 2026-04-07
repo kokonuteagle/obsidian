@@ -35,8 +35,11 @@ tags:
 2. 클라크의 경이감은 과학적 엄밀성과 양립하는가?
 3. 우주 스케일의 상상력은 인간 정치와 제도에 어떤 효과를 주는가?
 
-## 대표 텍스트와 후속 읽기
+## 인근 분야로 번지기
 
-- 『2001 스페이스 오디세이』
-- 『라마와의 랑데부』
-- 『유년기의 끝』
+이 문서는 [[브리지/예측과 통치]] 와 [[과학철학/패러다임]] 으로 건너갈 때 깊어진다. SF는 취향 장르가 아니라, 미래를 예측하고 제도를 상상하는 사유 실험실로 읽을 수 있다.
+
+## 출처와 후속 읽기
+
+- [Encyclopaedia Britannica, "Arthur C. Clarke"](https://www.britannica.com/biography/Arthur-C-Clarke): 작가의 위치와 대표 문제의식을 빠르게 잡을 수 있다.
+- [Arthur C. Clarke Foundation](https://www.clarkefoundation.org/arthur-c-clarke/): Clarke의 과학기술 상상력과 공적 유산을 이어 읽기 좋다.

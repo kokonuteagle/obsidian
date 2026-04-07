@@ -34,8 +34,11 @@ UTXO에서 거래는 기존 출력들을 소비하고 새로운 출력들을 생
 2. 프라이버시와 투명성의 균형은 UTXO 모델에서 어떻게 설계되는가?
 3. 계좌 기반 시스템과 비교할 때 UTXO의 제도적 장점은 무엇인가?
 
-## 대표 텍스트와 후속 읽기
+## 인근 분야로 번지기
 
-- 비트코인 트랜잭션 구조 문서
-- UTXO vs account model 비교 자료
-- 비트코인 스크립트와 검증 규칙 관련 문헌
+이 문서는 [[브리지/돈과 신뢰]] 와 [[브리지/의례와 합의]] 를 통해 더 멀리 간다. 비트코인은 단순 기술이 아니라 신뢰, 절차, 장부, 합의를 재설계하는 문명 실험으로 읽을 수 있다.
+
+## 출처와 후속 읽기
+
+- [Bitcoin Developer Guide, "Transactions"](https://developer.bitcoin.org/devguide/transactions.html): UTXO 모델이 실제 거래 구조에서 어떻게 작동하는지 설명한다.
+- [Bitcoinbook GitHub, *Mastering Bitcoin*](https://github.com/bitcoinbook/bitcoinbook): UTXO와 스크립트, 소유 모델을 따라가기에 좋다.

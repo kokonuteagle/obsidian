@@ -34,8 +34,11 @@ BDNF는 뇌유래신경영양인자로, 신경세포의 생존과 성장, 시냅
 2. 운동 종류에 따라 BDNF 경로의 의미 있는 차이가 존재하는가?
 3. 수면과 BDNF의 상호작용은 얼마나 중요한가?
 
-## 대표 텍스트와 후속 읽기
+## 인근 분야로 번지기
 
-- BDNF와 신경가소성 개론
-- 운동·수면·BDNF 관련 리뷰
-- 학습과 기억의 분자생물학 입문서
+이 문서는 [[브리지/인지적 비용]] 과 [[사이버네틱스/피드백]] 으로 건너갈 때 살아난다. 뇌 기능은 고립된 모듈이 아니라, 몸과 환경과 규율 장치 속에서 계속 조정되는 제약 구조로 이해하는 편이 맞다.
+
+## 출처와 후속 읽기
+
+- [PubMed, Cotman & Berchtold, "Exercise: a behavioral intervention to enhance brain health and plasticity"](https://pubmed.ncbi.nlm.nih.gov/18377912/): 운동과 BDNF 논의의 고전적 리뷰.
+- [PMC review on exercise and BDNF](https://pmc.ncbi.nlm.nih.gov/articles/PMC4697050/): BDNF를 운동·가소성·인지의 연결축으로 읽기 좋다.
